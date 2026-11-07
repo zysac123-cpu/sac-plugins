@@ -1,0 +1,120 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Academic toolkit",
+    "zh": "学术工具箱"
+  },
+  "description": {
+    "en": "Local DeepSeek Harness plugins for academic writing and reading: a function-grouped skills catalog and in-place selection translation.",
+    "zh": "面向学术写作与阅读的 DeepSeek Harness 本地插件：按功能域归类的技能库，以及就地划词翻译。"
+  },
+  "metadata": {
+    "categories": {
+      "academic": {
+        "title": {
+          "en": "Academic writing & research",
+          "zh": "学术写作与研究"
+        }
+      },
+      "translation": {
+        "title": {
+          "en": "Translation",
+          "zh": "翻译"
+        }
+      }
+    },
+    "labels": {
+      "chinese-first": {
+        "title": {
+          "en": "Chinese-first UI",
+          "zh": "中文界面"
+        }
+      },
+      "experimental-dependency": {
+        "title": {
+          "en": "Needs an experimental bundle",
+          "zh": "依赖实验插件包"
+        }
+      }
+    },
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "sac-skills-catalog",
+      "title": {
+        "en": "Skills catalog",
+        "zh": "技能库"
+      },
+      "description": {
+        "en": "Groups every session skill by function domain with search, routing descriptions, and one-click /command copy.",
+        "zh": "把当前会话的 skills 按功能域自动归类，可搜索、看说明与路径、一键复制 /命令。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJTa2lsbHMgY2F0YWxvZyI+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMyNDdiYmYiLz4KICA8cGF0aCBkPSJNMTggMjBoMjhNMTggMzBoMjhNMTggNDBoMTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIzLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik00MyA0MC41bDIuNiA1LjMgNS40IDAuNy00IDMuOSAxIDUuNC01LTIuNyIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC45NSIvPgogIDxwYXRoIGQ9Ik00NSA0NHY2TTQyIDQ3aDYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzI0N2JiZiIgc3Ryb2tlLXdpZHRoPSIyLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K",
+      "author": "dsh plugin contributors",
+      "metadata": {
+        "category": "academic",
+        "keywords": [
+          "skills",
+          "catalog",
+          "技能库",
+          "学术"
+        ],
+        "labels": [
+          "chinese-first"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794014717,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "sac-translate-selection",
+      "title": {
+        "en": "Selection translator",
+        "zh": "划词翻译"
+      },
+      "description": {
+        "en": "Select text in a conversation and translate it in place with the official translator, with a retry ladder for flaky endpoints.",
+        "zh": "在聊天记录里选中文字，就近点「翻译」即出译文；带重试阶梯，缓存命中直接出结果。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJUcmFuc2xhdGUgc2VsZWN0aW9uIj4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHJ4PSIxNCIgZmlsbD0iIzI0N2JiZiIvPgogIDxwYXRoIGQ9Ik0xNiAyMGgxOE0yNSAxNnY0YzAgOC41LTUgMTQtMTIgMTYuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjMuNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTIwIDI3YzEuNiA2IDYuNCAxMC42IDEyLjQgMTIuNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjMuNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTM2IDQ2bDcuNS0xNkw1MSA0NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjMuNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgPHBhdGggZD0iTTM4LjYgNDAuNGg5LjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIzLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K",
+      "author": "dsh plugin contributors",
+      "metadata": {
+        "category": "translation",
+        "keywords": [
+          "translate",
+          "translation",
+          "划词翻译"
+        ],
+        "labels": [
+          "chinese-first",
+          "experimental-dependency"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794014683,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1"
+          }
+        }
+      ]
+    }
+  ]
+}
